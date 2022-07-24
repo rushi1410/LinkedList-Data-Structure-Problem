@@ -35,6 +35,12 @@ public class LinkedList {
 		newNode.next = tempNode;
 
 	}
+	public Node popfirst(){
+		Node tempNode = this.head;
+		this.head = head.next;
+		return tempNode;
+	}
+
 	public void print() {
 		if (head == null)
 		{
