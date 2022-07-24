@@ -40,6 +40,20 @@ public class LinkedList {
 		this.head = head.next;
 		return tempNode;
 	}
+	public Node poplast(){		
+		if(head == null) {
+			System.out.println("List is empty");
+		}		
+		Node lastNode = head;
+		Node previousNode = null;
+		while(lastNode.next != null) {
+			previousNode = lastNode;
+			lastNode = lastNode.next;
+		}
+		previousNode.next = null;
+		return lastNode;
+	}
+
 
 	public void print() {
 		if (head == null)

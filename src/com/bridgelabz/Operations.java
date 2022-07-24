@@ -39,4 +39,16 @@ public class Operations {
 		System.out.println("\nAfter Delete first Elememnt:");
 		linkedList.print();
 	}
+
+	public static void deleteAtLast() {
+		LinkedList linkedList = new LinkedList();		
+		linkedList.push(70);
+		linkedList.push(30);
+		linkedList.push(56);		
+		System.out.println("LinkedList:");
+		linkedList.print();
+		linkedList.poplast();
+		System.out.println("\nAfter Delete last Elememnt:");
+		linkedList.print();
+	}
 }
